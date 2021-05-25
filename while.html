@@ -1,0 +1,79 @@
+<htmml>
+<script>
+//a simple while loop
+let a = 1;
+while (a <= 12){
+    console.log("Output all : " + a)
+    a ++;
+}
+//3 parts initiate, condition, iterate
+let x = 1;
+for (x =1; x<=12; x ++){
+    console.log(x);
+}
+
+//leaving out initiate 
+let xc = 1;
+let y = 10;
+let z = 100;
+for(;  xc <=10; xc++, y+=10){
+    console.log(xc, y, z);
+}
+//incrementing in the loop
+let i = 1;
+let n = 10;
+let w = 100;
+for (; i<= 10;){
+    console.log(i+"...."+n+"...."+w);
+    i++;
+    n+=10;
+    w+=100;
+}
+
+//using continue will exclude 5 in this instance
+let d = 0;
+for (; d<=10;){
+    d++;
+     if(d==5){
+        continue;
+        }
+    console.log("output " + d);
+}
+//a Do While statement
+let e = 1;
+do{
+    console.log("Do while" +e);
+    e++;
+}while(e <=10);
+
+let m = 100;
+while(m <= 200){
+    console.log(m);
+    m++;
+}
+//use modulus
+let j = 100;
+while (j <= 200) {
+    if(j%2==0){
+        console.log("--");
+
+    }else{
+        console.log("**");
+    }
+    j++;
+}
+
+let s = 1;
+let t = 1;
+while (s <= 10){
+    
+    for (t=1;t <=10;t++){
+        console.log(t);
+        
+    }
+
+ s++;
+}
+
+</script>
+</html>
