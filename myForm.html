@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>Javascript Form:</title>   
+<head>
+  
+    
+</head> 
+<script>
+//create a variable for the form
+
+
+//validate the form input
+function validateFunction(){
+    let theForm = document.testForm;
+    //check to see that the name value is present
+    if (theForm.name.value ==""){
+        alert("name is empty");
+        theForm.name.focus();
+        return false;
+    }
+//check to see that the email value is present or correct length
+    if (theForm.email.value == "" || theForm.email.value.length <10){
+        alert("Email is not the correct format");
+        theForm.email.focus()
+        return false;
+    }
+//check to see if the password box is full
+    if (theForm.password.value.length < 6){
+        alert("Your password length is too short, 6 characters minimum");
+        theForm.password.focus()
+        return false;
+    }
+
+    return true;
+}
+
+</script>
+</head>
+<body>
+<h2>
+<div class="form">
+    <form action ="" method="get" name ="testForm">
+    <label for ="name">User Name</label>
+    <input  type="text" name ="name"><br>    
+    <br>
+    <label for = "email">Email:</label> 
+    <input type ="email" name ="email" id ="">
+    <br>
+    <label for = "password">Password</label>
+    <input type = "password" name  = "password" id =""><br>
+    <input type="submit" value="Submit" onclick="return (validateFunction())"> 
+    </form>
+</div>
+     
+</h2>
+</body>
+</html>
+
+
+
+
